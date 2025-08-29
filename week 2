@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form and Content</title>
+  <meta name="description" content="A practice page demonstrating lists, tables, media, and advanced HTML5 form features with validation.">
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to My HTML5 Assignment</h1>
+    <p>This page showcases lists, tables, media content, and a structured HTML5 form with built-in validation.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>Popular Web Development Languages</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+
+    <h3>Steps to Build a Web Page</h3>
+    <ol>
+      <li>Plan the structure and layout.</li>
+      <li>Write semantic HTML.</li>
+      <li>Style with CSS.</li>
+      <li>Add interactivity with JavaScript.</li>
+    </ol>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>Weekly Web Development Classes</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Introduction to HTML</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>CSS Fundamentals</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>JavaScript Basics</td>
+          <td>3 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Learning Resources</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder image of coding" width="400">
+      <figcaption>Figure 1: Sample coding workspace image</figcaption>
+    </figure>
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Sample Video</h3>
+    <video controls width="400">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section: Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?\d{10,15}$" required><br><br>
+      </fieldset>
+
+      <!-- Account Info -->
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="12"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6"><br><br>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+        </select><br><br>
+
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+        <p>Interests:</p>
+        <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+        <label><input type="checkbox" name="interests" value="design"> Design</label>
+        <label><input type="checkbox" name="interests" value="gaming"> Gaming</label><br><br>
+      </fieldset>
+
+      <!-- Submission -->
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment. All rights reserved.</p>
+  </footer>
+</body>
+</html>
